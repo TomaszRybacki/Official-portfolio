@@ -1,0 +1,117 @@
+.projects {
+  background-color: $white;
+  padding: 20px 0;
+}
+
+.work {
+  margin: 10px;
+  margin-top: 20px;
+  min-width: 300px;
+  height: 300px;
+  border: solid 4px $black;
+  position: relative;
+  cursor: pointer;
+
+  @include tablet {
+    min-width: 250px;
+    height: 250px;
+  }
+
+  @include mobile {
+    min-width: 250px;
+    height: 250px;
+  }
+}
+
+.work-mask {
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-title {
+  font-size: $large;
+  font-family: $secondary;
+  text-align: center;
+  padding: 10px;
+  max-width: 300px;
+  color: $color;
+}
+
+.work-txt {
+  font-size: $medium;
+  font-family: $primary;
+  text-align: center;
+  padding: 10px;
+  max-width: 300px;
+  color: $white;
+  line-height: 150%;
+}
+
+.miniature-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 300px;
+  &:hover {
+    opacity: 0;
+  }
+  &:focus {
+    opacity: 0;
+  }
+  &:active {
+    opacity: 0;
+  }
+
+  @include tablet {
+  width: 250px;
+  }
+
+  @include mobile {
+  width: 250px;
+  }
+}
+
+/* Shutter Out Horizontal */
+
+.hvr-shutter-out-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  background: #e1e1e1;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+.hvr-shutter-out-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $black;
+  transform: scaleX(0);
+  transform-origin: 50%;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+  color: $white;
+}
+.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+  transform: scaleX(1);
+}
+

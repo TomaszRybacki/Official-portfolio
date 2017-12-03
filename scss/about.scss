@@ -1,0 +1,212 @@
+.about-me {
+  background-color: $white;
+  padding: 20px 0;
+}
+
+.section-title {
+  font-family: $primary;
+  font-size: $xlarge;
+  color: $black;
+  font-weight: bold;
+  padding: 10px;
+  flex: 1 1 100%;
+  text-transform: uppercase;
+}
+
+.center {
+  text-align: center;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include tablet {
+     margin: 20px 0;
+  }
+
+  @include mobile {
+     margin: 20px 0;
+  }
+
+}
+
+.cert {
+  width: 90%;
+  min-width: 500px;
+
+  @include tablet {
+    min-width: 400px;
+  }
+
+  @include mobile {
+    width: 100%;
+    min-width: 300px;
+  }
+}
+
+.txt {
+  font-family: $primary;
+  font-size: $large;
+  font-weight: 300;
+  max-width: 800px;
+  padding: 10px;
+  margin: 0 auto;
+  line-height: 120%;
+  flex: 1 1 100%;
+}
+
+.divider {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star-big {
+  font-size: $jumbo
+}
+
+.star-small {
+  font-size: $xlarge;
+}
+// SKILL SECTION
+
+.tech {
+  font-family: $primary;
+  font-size: $large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  li {
+    flex: 1 1 100%;
+    padding: 5px 0;
+    max-width: 300px;
+  }
+}
+
+.skill-1 {
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-color: $gray;
+  border-left: solid 80px $black;
+  float: right;
+}
+
+.skill-2 {
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-color: $gray;
+  border-left: solid 80px $black;
+  float: right;
+}
+
+.skill-3 {
+  margin: 0 10px;
+  width: 30px;
+  height: 20px;
+  display: inline-block;
+  background-color: $gray;
+  border-left: solid 70px $black;
+  float: right;
+}
+
+.skill-4 {
+  margin: 0 10px;
+  width: 30px;
+  height: 20px;
+  display: inline-block;
+  background-color: $gray;
+  border-left: solid 70px $black;
+  float: right;
+}
+
+.skill-5 {
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-color: $gray;
+  border-left: solid 80px $black;
+  float: right;
+}
+
+.skill-6 {
+  margin: 0 10px;
+  width: 80px;
+  height: 20px;
+  display: inline-block;
+  background-color: $gray;
+  border-left: solid 20px $black;
+  float: right;
+}
+
+.skill-7 {
+  margin: 0 10px;
+  width: 60px;
+  height: 20px;
+  display: inline-block;
+  background-color: $gray;
+  border-left: solid 40px $black;
+  float: right;
+}
+
+.skill-8 {
+  margin: 0 10px;
+  width: 50px;
+  height: 20px;
+  display: inline-block;
+  background-color: $gray;
+  border-left: solid 50px $black;
+  float: right;
+}
+
+.skill-9 {
+  margin: 0 10px;
+  width: 60px;
+  height: 20px;
+  display: inline-block;
+  background-color: $gray;
+  border-left: solid 40px $black;
+  float: right;
+}
+
+.skill-10 {
+  margin: 0 10px;
+  width: 30px;
+  height: 20px;
+  display: inline-block;
+  background-color: $gray;
+  border-left: solid 70px $black;
+  float: right;
+}
+
+.skill-11 {
+  margin: 0 10px;
+  width: 40px;
+  height: 20px;
+  display: inline-block;
+  background-color: $gray;
+  border-left: solid 60px $black;
+  float: right;
+}
+
+.skill-12 {
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-color: $gray;
+  border-left: solid 80px $black;
+  float: right;
+}
+
+

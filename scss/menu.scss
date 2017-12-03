@@ -1,0 +1,157 @@
+.menu {
+  width: 100%;
+  min-width: 300px;
+  background: $black;
+  padding: 10px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+}
+
+.title {
+  font-family: $primary;
+  font-size: $xlarge;
+  color: $color;
+  font-weight: bold;
+  margin: 0 10px;
+
+  @include mobile {
+    font-size: $large;
+  }
+}
+
+.subtitle {
+  font-family: $secondary;
+  font-size: $large;
+  color: $gray;
+  margin: 0 10px;
+
+  @include mobile {
+    font-size: $medium;
+  }
+}
+
+.icon {
+  font-size: 40px;
+  color: $gray;
+  transform: rotate(90deg);
+  cursor: pointer;
+  width: 40px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+
+  @include mobile {
+    font-size: 30px;
+  }
+}
+
+.submenu {
+  width: 100%;
+  min-width: 300px;
+  background: $black;
+  padding: 10px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  transition: all 0.5s;
+  transform: translateY(-100%);
+}
+
+.list {
+  display: flex;
+  flex: 1 1 80%;
+  justify-content: space-around;
+  align-items: center;
+  font-family: $primary;
+  font-size: $medium;
+  text-transform: uppercase;
+  li {
+    color: $gray;
+
+  @include mobile {
+   padding-bottom: 10px;
+  }
+  }
+
+
+  @include mobile {
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.flags {
+  display: flex;
+  flex: 1 1 20%;
+  justify-content: space-around;
+
+  @include mobile {
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+
+  }
+}
+
+// Animation
+/* Icon Down */
+
+.icon:hover, .icon:focus {
+  color: $color;
+  animation: hvr-icon-down 0.5s ease-out;
+}
+
+@-webkit-keyframes hvr-icon-down {
+  0%,
+  50%,
+  100% {
+    transform: translateY(0) rotate(90deg);
+  }
+  25%,
+  75% {
+    transform: translateY(6px) rotate(90deg);
+  }
+}
+
+/* Underline  */
+
+.underline::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: $color;
+  margin: 2px auto;
+  transition: width 0.5s;
+}
+
+.underline:hover::after, .underline:focus::after {
+  width: 100%;
+}
+
+/* Color */
+
+.list li a:hover, .list li a:focus {
+  color: $color;
+}
+
+/* Slide submenu */
+
+.menu-on {
+  transition: all 0.5s;
+  transform: translateY(70px);
+
+  @include tablet {
+  transform: translateY(70px);
+  }
+
+  @include mobile {
+  transform: translateY(60px);
+  }
+}

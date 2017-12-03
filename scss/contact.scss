@@ -1,0 +1,162 @@
+.contact {
+  background-color: $black;
+  padding-top: 20px;
+}
+
+.align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.green {
+  color: $color;
+  margin-bottom: 10px;
+}
+
+.cv {
+  background: none;
+  width: 200px;
+  height: 50px;
+  text-transform: uppercase;
+  color: $color;
+  font-family: $primary;
+  font-size: $large;
+  font-weight: bold;
+  border: solid 2px $color;
+  cursor: pointer;
+  margin: 20px;
+  transition: all 0.3s ease;
+
+  &:hover, &:focus {
+    color: $black;
+    background: $color;
+    border: solid 2px $color;
+    }
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-icon {
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+}
+
+.focus {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover, &:focus {
+    transform: scale(1.2);
+    }
+}
+
+.form {
+  width: 90%;
+  min-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @include mobile {
+    min-width: 300px;
+  }
+}
+
+.input-area {
+  width: 95%;
+  height: 30px;
+
+  font-family: $primary;
+  font-size: $medium;
+  color: $white;
+  position: relative;
+
+  border: solid 2px $darkgray;
+  background: none;
+
+  margin: 10px;
+  padding: 10px;
+
+  &::placeholder {
+   color: $darkgray;
+}
+}
+
+.form-button {
+  width: 100%;
+  height: 60px;
+
+  font-family: $primary;
+  font-size: $large;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $color;
+
+  background: none;
+  cursor: pointer;
+  border: solid 2px $color;
+
+  margin: 10px;
+  padding: 10px;
+  transition: all 0.3s ease;
+
+  &:hover, &:focus {
+    color: $black;
+    background: $color;
+    border: solid 2px $color;
+  }
+}
+
+.input-area:focus {
+  outline: none;
+}
+
+#message {
+  height: 120px;
+}
+
+.footer {
+  background-color: $black;
+  padding-top: 20px;
+}
+
+.footer-txt {
+  width: 100%;
+  color: $white;
+  font-family: $primary;
+  font-size: $medium;
+  padding: 20px;
+  border-top: solid 2px $color;
+  text-align: center;
+}
+
+/* Animations */
+
+input:focus+.underline-left {
+  width: 100%
+}
+
+textarea:focus+.underline-left {
+  width: 100%
+}
+
+.underline-left {
+  position: relative;
+  top: -12px;
+  left: 0;
+  width: 0;
+  background-color: $color;
+  display: inline-block;
+  height: 2px;
+  transition: all 0.5s ease;
+}
+
+
+

@@ -1,0 +1,128 @@
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+body {
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.box80 {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.box20 {
+  flex: 0 0 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.box40 {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  @include tablet {
+  display: none;
+  }
+
+  @include mobile {
+    flex: 1 1 100%;
+    height: 70vh;
+    align-items: flex-end;
+  }
+}
+
+.box60 {
+  flex: 1 1 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+
+  font-family: $primary;
+  color: $gray;
+  font-size: $xlarge;
+
+  @include tablet {
+    flex: 1 1 100%;
+    font-size: $xlarge;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    order: 1;
+    margin-top: 40px;
+  }
+
+  @include mobile {
+    flex: 1 1 100%;
+    font-size: $large;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.box100 {
+  flex: 1 1 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box50 {
+  flex: 1 1 40%;
+  padding: 0 20px;
+
+  @include tablet {
+    padding: 0 5px;
+  }
+}
+
+.space {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.order1 {
+
+  @include tablet {
+    order: 1; @important
+  }
+
+   @include mobile {
+    order: 1; @important
+  }
+
+}
+
+.order2 {
+
+  @include tablet {
+    order: 2; @important
+  }
+
+  @include mobile {
+    order: 2; @important
+  }
+}
+
+.hide-txt {
+clip: rect(1px, 1px, 1px, 1px);
+overflow: hidden;
+position: absolute !important;
+height: 1px;
+width: 1px;
+word-wrap: normal;
+}
