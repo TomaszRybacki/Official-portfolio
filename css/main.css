@@ -571,6 +571,12 @@ figure {
   -ms-flex: 1 1 100%;
   flex: 1 1 100%; }
 
+.bold {
+  font-weight: bold;
+  font-style: italic; }
+  .bold:hover {
+    color: #87c232; }
+
 .divider {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 100%;
