@@ -56,12 +56,17 @@ figure {
   margin: 0 auto;
   line-height: 120%;
   flex: 1 1 100%;
+
+  @include tablet {
+    font-size: $medium;
+  }
 }
 
 .bold {
   font-weight: bold;
   font-style: italic;
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color;
   }
 }

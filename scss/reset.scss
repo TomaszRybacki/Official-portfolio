@@ -24,4 +24,16 @@ a {text-decoration: none; color: inherit;}
 button {
   background-color: rgb(34, 38, 41);
   border: none;
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+a {
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
 }

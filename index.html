@@ -3,15 +3,18 @@
 
 <head>
 
- <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110158556-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110158556-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-110158556-1');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110158556-1');
+  </script>
 
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -62,8 +65,8 @@
           <li><a class="underline" href="#contact">Kontakt</a></li>
         </ul>
         <ul class="flags">
-          <li><span class="hide-txt">Polskojęzyczna wersja strony</span><a title="Polskojęzyczna wersja strony" href="index.html" target="_self"><img src="img/polish.jpg" alt="Polskojęzyczna wersja strony"></a></li>
-          <li><span class="hide-txt">Anglojęzyczna wersja strony</span><a title="Anglojęzyczna wersja strony" href="english/index.html" target="_self"><img src="img/english.jpg" alt="Anglojęzyczna wersja strony"></a></li>
+          <li><span class="hide-txt">Polskojęzyczna wersja strony</span><a class="outline" title="Polskojęzyczna wersja strony" href="index.html" target="_self"><img src="img/polish.jpg" alt="Polskojęzyczna wersja strony"></a></li>
+          <li><span class="hide-txt">Anglojęzyczna wersja strony</span><a class="outline" title="Anglojęzyczna wersja strony" href="english/index.html" target="_self"><img src="img/english.jpg" alt="Anglojęzyczna wersja strony"></a></li>
         </ul>
       </div>
     </nav>
@@ -76,7 +79,7 @@
       <div class="wrapper">
 
         <div class="box40">
-          <img class="me" src="img/me-1.jpg" alt="moje zdjęcie">
+          <img class="me" src="img/me-1.jpg" alt="zdjęcie przedstawiające mnie">
         </div>
         <div class="box60">
           <p id="type-it"></p>
@@ -159,65 +162,49 @@
         <span class="star-small">&#10032;</span>&#9866; &#9866;
         </span>
 
-        <a class="work-button" href="https://codepen.io/Tomasz_89/full/MEzjKO/" target="_blank">
-          <div class="work hvr-shutter-out-horizontal">
-            <div class="work-mask">
-              <h3 class="work-title">Free Code Camp - portfolio</h3>
-              <p class="work-txt">Strona zawierająca wszystkie projekty wykonane na potrzeby zdobycia certyfikatu.</p>
-            </div>
-            <img class="miniature-img" src="img/fcc-folio.jpg" alt="portfolio free code camp">
-          </div>
-        </a>
+        <div class="projects__preview">
+          <img class="preview__img" src="img/Trip.jpg" alt="preview of Travel Agency website">
+        </div>
 
-        <a class="work-button" href="http://tomasz89.ayz.pl" target="_blank">
-          <div class="work hvr-shutter-out-horizontal">
-            <div class="work-mask">
-              <h3 class="work-title">KUBB - fotograf</h3>
-              <p class="work-txt">Zakodowanie darmowego szablonu PSD do strony internetowej.</p>
-            </div>
-            <img class="miniature-img" src="img/kubb.jpg" alt="strona fotografa">
-          </div>
-        </a>
+        <div class="projects__description">
+          <h3 class="projects__title">Strona biura podróży</h3>
+          <p class="projects__txt">Stworzona na podstawie darmowego szablonu PSD. Wykonując ten projekt poznałem wykorzystanie ikon SVG oraz proces tworzenia menu typu hamburger.</p>
+          <a class="description__button" href="https://tomaszrybacki.github.io/TravelAgency-website/" target="_blank">www</a>
+          <a class="description__button" href="https://github.com/TomaszRybacki/TravelAgency-website" target="_blank">kod</a>
+        </div>
 
-        <a class="work-button" href="https://codepen.io/Tomasz_89/full/YrabYm/" target="_blank">
-          <div class="work hvr-shutter-out-horizontal">
-            <div class="work-mask">
-              <h3 class="work-title">Formularz - walidacja</h3>
-              <p class="work-txt">Sprawdza czy podane przez użytkownika dane są poprawne.</p>
-            </div>
-            <img class="miniature-img" src="img/form.jpg" alt="walidacja formularza">
-          </div>
-        </a>
+        <div class="projects__preview">
+          <img class="preview__img" src="img/kubb.jpg" alt="preview of Travel Agency website">
+        </div>
 
-        <a class="work-button" href="https://codepen.io/Tomasz_89/full/LzWaKZ/" target="_blank">
-          <div class="work hvr-shutter-out-horizontal">
-            <div class="work-mask">
-              <h3 class="work-title">JavaScript - kalkulator</h3>
-              <p class="work-txt">Prosty kalkulator potrafiący dodawać, odejmować, mnożyć i dzielić dwie liczby.</p>
-            </div>
-            <img class="miniature-img" src="img/calc.jpg" alt="kalkulator java script">
-          </div>
-        </a>
+        <div class="projects__description">
+          <h3 class="projects__title">Strona fotografa</h3>
+          <p class="projects__txt">Stworzona na podstawie darmowego szablonu PSD. Wykonując ten projekt poznałem Sass, metodologię BEM i CSS flexbox.</p>
+          <a class="description__button" href="https://tomaszrybacki.github.io/PSD-to-website/" target="_blank">www</a>
+          <a class="description__button" href="https://github.com/TomaszRybacki/PSD-to-website" target="_blank">kod</a>
+        </div>
 
-        <a class="work-button" href="https://codepen.io/Tomasz_89/full/GMEEgK/" target="_blank">
-          <div class="work hvr-shutter-out-horizontal">
-            <div class="work-mask">
-              <h3 class="work-title">Pomodoro - czasomierz</h3>
-              <p class="work-txt">Odlicza ustawiony przez użytkownika czas.</p>
-            </div>
-            <img class="miniature-img" src="img/pomodoro.jpg" alt="czasomierz">
-          </div>
-        </a>
+        <div class="projects__preview">
+          <img class="preview__img" src="img/FCC.jpg" alt="preview of Travel Agency website">
+        </div>
 
-        <a class="work-button" href="https://codepen.io/Tomasz_89/full/EbmoQE/" target="_blank">
-          <div class="work hvr-shutter-out-horizontal">
-            <div class="work-mask">
-              <h3 class="work-title">Kryptolog - gra</h3>
-              <p class="work-txt">Aby wygrać musisz zapamiętać i powtórzyć kombinację 10 przesunięć mechanizmu szyfrującego.</p>
-            </div>
-            <img class="miniature-img" src="img/simon.jpg" alt="gra pamięciowa">
-          </div>
-        </a>
+        <div class="projects__description">
+          <h3 class="projects__title">Portfolio FCC</h3>
+          <p class="projects__txt">Strona stworzona w ramach ścieżki Free Code Camp. Zawiera wszystkie projekty jakie wykonałem żeby zdobyć certyfikat front-end developera.</p>
+          <a class="description__button" href="https://tomaszrybacki.github.io/Portfolio-Webpage/" target="_blank">www</a>
+          <a class="description__button" href="https://github.com/TomaszRybacki/Portfolio-Webpage" target="_blank">kod</a>
+        </div>
+
+        <div class="projects__preview">
+          <img class="preview__img" src="img/Game.jpg" alt="preview of Travel Agency website">
+        </div>
+
+        <div class="projects__description">
+          <h3 class="projects__title">Kryptolog</h3>
+          <p class="projects__txt">Gra pamięciowa, której celem jest zapamiętanie i powtórzenie kombinacji dziesięciu przesunięć mechanizmu szyfrującego.</p>
+          <a class="description__button" href="https://tomaszrybacki.github.io/Simon-Game/" target="_blank">www</a>
+          <a class="description__button" href="https://github.com/TomaszRybacki/Simon-Game" target="_blank">kod</a>
+        </div>
 
       </div>
     </div>
@@ -229,7 +216,7 @@
 
       <div class="box50 align order2">
 
-        <img class="me" src="img/me-2.jpg" alt="moje zdjęcie">
+        <img class="me" src="img/me-2.jpg" alt="zdjęcie przedstawiające mnie">
         <a tabIndex="-1" href="cv/Tomasz%20Rybacki%20-%20CV%20(PL).pdf" target="_blank"><button class="cv">Pobierz CV</button></a>
 
         <div class="social-media">
@@ -246,23 +233,23 @@
         <h2 class="section-title center green">Kontakt</h2>
 
         <form class="form" method="post" target="_self" accept-charset="utf-8" action="send.php">
-            <label class="hide-txt" for="name">Imię i Nazwisko</label>
-            <input class="input-area" type="text" id="name" name="full-name" placeholder="Imię i Nazwisko" required>
-            <span class="underline-left"></span>
+          <label class="hide-txt" for="name">Imię i Nazwisko</label>
+          <input class="input-area" type="text" id="name" name="full-name" placeholder="Imię i Nazwisko" required>
+          <span class="underline-left"></span>
 
-             <label class="hide-txt" for="email">E-mail</label>
-             <input class="input-area" type="email" id="email" name="e-mail" placeholder="E-mail" required>
-            <span class="underline-left"></span>
+          <label class="hide-txt" for="email">E-mail</label>
+          <input class="input-area" type="email" id="email" name="e-mail" placeholder="E-mail" required>
+          <span class="underline-left"></span>
 
-           <label class="hide-txt" for="message-title">Tytuł wiadomości</label>
-            <input class="input-area" type="text" id="message-title" name="message-title" placeholder="Tytuł wiadomości" required>
-            <span class="underline-left"></span>
+          <label class="hide-txt" for="message-title">Tytuł wiadomości</label>
+          <input class="input-area" type="text" id="message-title" name="message-title" placeholder="Tytuł wiadomości" required>
+          <span class="underline-left"></span>
 
-           <label class="hide-txt" for="message">Tekst wiadomości</label>
-            <textarea class="input-area" id="message" name="message" placeholder="Tekst wiadomości" required></textarea>
-            <span class="underline-left"></span>
+          <label class="hide-txt" for="message">Tekst wiadomości</label>
+          <textarea class="input-area" id="message" name="message" placeholder="Tekst wiadomości" required></textarea>
+          <span class="underline-left"></span>
 
-            <input class="form-button" type="submit" id="join" value="Wyślij">
+          <input class="form-button" type="submit" id="join" value="Wyślij">
         </form>
 
       </div>

@@ -95,10 +95,14 @@
   @include mobile {
     flex: 1 1 100%;
     flex-wrap: wrap;
-
   }
 }
 
+.outline {
+  &:focus {
+    outline: 2px dashed $color;
+  }
+}
 // Animation
 /* Icon Down */
 
